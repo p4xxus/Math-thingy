@@ -185,14 +185,11 @@ class Decoding extends Component {
 
 
 function decoderSync() {
-    const rangeInput = document.getElementById("0");
-    const numberInput = document.getElementById("1");
-    for (let index = 0; index < Object.values(settings).length; index++) {
+    for (let index = 0; index < Object.values(settings).length; index++) { //loop through: so I have 01, 02; 10, 11; ...
         console.log(Object.values(settings).length);
         for (let index2 = 0; index2 < 2; index2++) {
             console.log(Object.values(settings)[index]);
             document.getElementById(`${index}${index2}`).value = Object.values(settings)[index]
-
         }
     }
 
