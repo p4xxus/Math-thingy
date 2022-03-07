@@ -15,7 +15,7 @@ code {
 
 .container{
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
 }
 
 .canvasDiv{
@@ -30,16 +30,17 @@ code {
 }
 
 .interfaceContainer{
-  width: 98%;
+  width: 70%;
   height: 98%;
   margin: 0.5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: unset;
+align-content: flex-start;
 }
 
 canvas{
-  width: 98%;
-  height: 98%;
+  width: 95%;
+  height: 95%;
   border: .3vw solid black;
   border-radius: 2vw;
   background-color: white;
@@ -51,8 +52,9 @@ canvas{
   border: .1vw solid black;
   border-radius: 1vw;
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   margin-left: 1vw;
+justify-content: space-evenly;
 }
 
 .coding{
@@ -61,7 +63,6 @@ canvas{
   border: .1vw solid black;
   border-radius: 1vw;
   margin: 0.5vw;
-
 }
 
 .decodeDiv{
@@ -81,7 +82,7 @@ canvas{
 }
 
 input[type="range"]{
-  width:10vw
+  width:6vw
 }
 
 input[type="number"]{

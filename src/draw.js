@@ -6,7 +6,7 @@ let settings = {
     "amount": "20",
     "size": "20",
     "distance": "0",
-    "step": "0.1"
+    "step": "1"
 }
 
 function draw() {
@@ -38,7 +38,7 @@ function draw() {
         ctx.closePath();
         ctx.stroke();
         ctx.fill();
-        ctx.rotate(-Math.atan(1 / (Math.sqrt(index))) - settings.distance)//rotate canvas at
+        ctx.rotate(-Math.atan(1 / (Math.sqrt(index))) - settings.distance)//rotate canvas at       (also I love the settings.distance :D)
         // _____
         // |  /  <-- this angle
         // |/
@@ -63,7 +63,7 @@ function draw() {
 
 class Settings extends Component {
     render() {
-        const { setting, maximum, defaultValueProp, idProp, multiplier, stepProp } = this.props
+        const { setting, maximum, defaultValueProp, idProp, multiplier } = this.props
 
         function newValue(event) {
             let valueOfEvent = event.target.value
@@ -71,8 +71,19 @@ class Settings extends Component {
             const numberInput = document.getElementById(idProp + "1");
             rangeInput.value = valueOfEvent; //sync number input with range input
             numberInput.value = valueOfEvent;
-            if (!(setting === "step")) { rangeInput.setAttribute("step", settings.step) }
-            else rangeInput.setAttribute("step", "0.1")
+            if (!(setting === "step")) { //step always 0,005
+                rangeInput.setAttribute("step", settings.step);
+                numberInput.setAttribute("step", settings.step);
+                if (setting === "amount") {
+                    numberInput.setAttribute("step", Math.round(settings.step)); //round so amount is always an int
+                    rangeInput.setAttribute("step", Math.round(settings.step));
+                }
+            } else {
+                rangeInput.setAttribute("step", "0.005"); //would be dumb if you could change the step of the step
+                rangeInput.setAttribute("min", "0.005");
+                numberInput.setAttribute("min", "0.005");
+            }
+            // if (setting === "amount") { rangeInput.setAttribute("step", "1"); numberInput.setAttribute("step", "1") }
             valueOfEvent *= multiplier
             settings[`${setting}`] = valueOfEvent;
 
@@ -80,6 +91,9 @@ class Settings extends Component {
             Encoding();
         }
 
+        document.addEventListener("load", () => {
+            document.getElementById("encodingInput").addEventListener("change", () => { newValue() })
+        })
         return (
             <div className='settingDiv' setting={setting}>
                 <p>{setting}</p>
@@ -97,7 +111,7 @@ class Settings extends Component {
 function Encoding() {
     function copyToClipboard() {
         function returnEncoded() {
-            return (encode(`${settings.amount} ${settings.size} ${settings.distance}`))//encode stuff
+            return (encode(`${settings.amount} ${settings.size} ${settings.distance} ${settings.step}`))//encode stuff
         }
         navigator.clipboard.writeText(returnEncoded());//copy to clipboard
         console.log(returnEncoded());
@@ -146,6 +160,7 @@ class Decoding extends Component {
                 setTimeout(() => {
                     document.getElementById("encodingInput").value = ""
                 }, 800);
+                decoderSync() //sync and draw
                 draw()
             }
         }
@@ -157,6 +172,30 @@ class Decoding extends Component {
             </div>
         )
     }
+}
+
+
+
+
+//-------------------------------------------------------
+//                        SYNC                           
+//-------------------------------------------------------
+
+
+
+
+function decoderSync() {
+    const rangeInput = document.getElementById("0");
+    const numberInput = document.getElementById("1");
+    for (let index = 0; index < Object.values(settings).length; index++) {
+        console.log(Object.values(settings).length);
+        for (let index2 = 0; index2 < 2; index2++) {
+            console.log(Object.values(settings)[index]);
+            document.getElementById(`${index}${index2}`).value = Object.values(settings)[index]
+
+        }
+    }
+
 }
 
 export default { draw, Settings, settings, Encoding, Decoding }
