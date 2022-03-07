@@ -34,8 +34,7 @@ function App() {
             setting: "amount",
             maximum: "200",
             defaultValueProp: "20",
-            idProp: "0",
-            multiplier: "1"
+            idProp: "0"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 8,
@@ -43,9 +42,8 @@ function App() {
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "size",
             maximum: "50",
-            defaultValueProp: "40",
-            idProp: "1",
-            multiplier: "0.5"
+            defaultValueProp: "20",
+            idProp: "1"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 9,
@@ -54,8 +52,7 @@ function App() {
             setting: "distance",
             maximum: "75",
             defaultValueProp: "0",
-            idProp: "2",
-            multiplier: "0.01"
+            idProp: "2"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 10,
@@ -64,8 +61,7 @@ function App() {
             setting: "step",
             maximum: "5",
             defaultValueProp: "1",
-            idProp: "3",
-            multiplier: "1"
+            idProp: "3"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 11,
@@ -248,8 +244,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       setting,
       maximum,
       defaultValueProp,
-      idProp,
-      multiplier
+      idProp
     } = this.props;
 
     function newValue(event) {
@@ -278,7 +273,6 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       } // if (setting === "amount") { rangeInput.setAttribute("step", "1"); numberInput.setAttribute("step", "1") }
 
 
-      valueOfEvent *= multiplier;
       settings[`${setting}`] = valueOfEvent;
       draw();
       Encoding();
@@ -296,7 +290,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         children: setting
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 98,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "range",
@@ -308,7 +302,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 100,
+        lineNumber: 99,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "number",
@@ -321,12 +315,12 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 101,
+        lineNumber: 100,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 97,
       columnNumber: 13
     }, this);
   }
@@ -360,12 +354,12 @@ function Encoding() {
         children: "Encoded hex-string:"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 129,
+        lineNumber: 128,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 128,
+      lineNumber: 127,
       columnNumber: 13
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("button", {
@@ -373,23 +367,23 @@ function Encoding() {
         children: " copy"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 132,
+        lineNumber: 131,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 131,
+      lineNumber: 130,
       columnNumber: 13
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
       id: "isCopied"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 134,
+      lineNumber: 133,
       columnNumber: 13
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 127,
+    lineNumber: 126,
     columnNumber: 9
   }, this);
 }
@@ -407,7 +401,7 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       if (!(decodedArray.length === settingsArray.length)) {
         if (event.target.value === "") return; //return if nothing
 
-        document.getElementById("errorMessage").innerText = "this is not a hex code.";
+        document.getElementById("errorMessage").innerText = "Wrong hex code.";
         setTimeout(() => {
           document.getElementById("errorMessage").innerText = "";
         }, 1500); //this is not a hex code, if not the hex code I want
@@ -435,7 +429,7 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         children: "Decode: "
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 169,
+        lineNumber: 168,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "text",
@@ -444,18 +438,18 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         onChange: decodeFunc
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 170,
+        lineNumber: 169,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
         id: "errorMessage"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 171,
+        lineNumber: 170,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 168,
+      lineNumber: 167,
       columnNumber: 13
     }, this);
   }
@@ -42425,7 +42419,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("328bf0e2b5238535bbe7")
+/******/ 		__webpack_require__.h = () => ("f7369f3e99f7ce645896")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

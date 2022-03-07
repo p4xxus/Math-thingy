@@ -63,7 +63,7 @@ function draw() {
 
 class Settings extends Component {
     render() {
-        const { setting, maximum, defaultValueProp, idProp, multiplier } = this.props
+        const { setting, maximum, defaultValueProp, idProp } = this.props
 
         function newValue(event) {
             let valueOfEvent = event.target.value
@@ -84,7 +84,6 @@ class Settings extends Component {
                 numberInput.setAttribute("min", "0.005");
             }
             // if (setting === "amount") { rangeInput.setAttribute("step", "1"); numberInput.setAttribute("step", "1") }
-            valueOfEvent *= multiplier
             settings[`${setting}`] = valueOfEvent;
 
             draw();
@@ -147,7 +146,7 @@ class Decoding extends Component {
             let decodedArray = decoded.split(" "); //split it into array
             if (!(decodedArray.length === settingsArray.length)) {
                 if (event.target.value === "") return; //return if nothing
-                document.getElementById("errorMessage").innerText = "this is not a hex code."
+                document.getElementById("errorMessage").innerText = "Wrong hex code."
                 setTimeout(() => {
                     document.getElementById("errorMessage").innerText = ""
                 }, 1500); //this is not a hex code, if not the hex code I want
