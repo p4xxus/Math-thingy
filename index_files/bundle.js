@@ -12,27 +12,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
-/* harmony import */ var _draw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./draw */ "./src/draw.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var _draw__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./draw */ "./src/draw.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "/Users/paulherklotz/Documents/Programmieren/React/first app/my-app/src/App.js";
-
+var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/App.js";
 
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
     className: "App",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
       className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "interfaceDiv",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
           className: "interfaceContainer",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_1__["default"].Settings, {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "amount",
             maximum: "200",
             defaultValueProp: "20",
@@ -40,9 +38,9 @@ function App() {
             multiplier: "1"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 13,
+            lineNumber: 8,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_1__["default"].Settings, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "size",
             maximum: "50",
             defaultValueProp: "40",
@@ -50,9 +48,9 @@ function App() {
             multiplier: "0.5"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 14,
+            lineNumber: 9,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_1__["default"].Settings, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "distance",
             maximum: "75",
             defaultValueProp: "0",
@@ -60,40 +58,55 @@ function App() {
             multiplier: "0.01"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 15,
+            lineNumber: 10,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+          className: "coding",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Encoding, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Decoding, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 14,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 12,
           columnNumber: 11
-        }, this)
-      }, void 0, false, {
+        }, this)]
+      }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 11,
+        lineNumber: 6,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
         className: "canvasDiv",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("canvas", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("canvas", {
           id: "test"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 18,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 17,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 5,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 9,
+    lineNumber: 4,
     columnNumber: 5
   }, this);
 }
@@ -101,7 +114,7 @@ function App() {
 _c = App;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 window.addEventListener("load", () => {
-  _draw__WEBPACK_IMPORTED_MODULE_1__["default"].draw();
+  _draw__WEBPACK_IMPORTED_MODULE_0__["default"].draw();
 });
 
 var _c;
@@ -154,18 +167,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! hex-encode-decode */ "./node_modules/hex-encode-decode/index.js");
+/* harmony import */ var hex_encode_decode__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "/Users/paulherklotz/Documents/Programmieren/React/first app/my-app/src/draw.js";
+var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/draw.js";
+
 
 
 
 let settings = {
-  "size": 20,
-  "amount": 20,
-  "distance": 0
+  "amount": "20",
+  "size": "20",
+  "distance": "0"
 };
 
 function draw() {
@@ -232,19 +248,19 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       valueOfEvent *= multiplier;
       settings[`${setting}`] = valueOfEvent;
       draw();
-      console.log(settings);
+      Encoding();
     }
 
-    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
       className: "settingDiv",
       setting: setting,
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
         children: setting
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 79,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "range",
         onChange: newValue,
         id: idProp + "0",
@@ -255,7 +271,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         fileName: _jsxFileName,
         lineNumber: 80,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "number",
         onChange: newValue,
         id: idProp + "1",
@@ -276,13 +292,146 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     }, this);
   }
 
+} //--------------------------------------
+//En- and decoding
+//--------------------------------------
+
+
+function Encoding() {
+  function copyToClipboard() {
+    function returnEncoded() {
+      return (0,hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__.encode)(`${settings.amount} ${settings.size} ${settings.distance}`); //encode stuff
+    }
+
+    navigator.clipboard.writeText(returnEncoded()); //copy to clipboard
+
+    console.log(returnEncoded());
+    console.log("copied");
+    const isCopied = document.getElementById("isCopied");
+    isCopied.innerText = "Copied!";
+    setTimeout(() => {
+      isCopied.innerText = "";
+    }, 1500);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+    className: "encodeDiv",
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+        children: "Encoded hex-string:"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 109,
+        columnNumber: 17
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 13
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("button", {
+        onClick: copyToClipboard,
+        children: " copy"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 112,
+        columnNumber: 17
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 111,
+      columnNumber: 13
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+      id: "isCopied"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 114,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 107,
+    columnNumber: 9
+  }, this);
+}
+
+_c = Encoding;
+
+class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    function decodeFunc(event) {
+      let decoded = (0,hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__.decode)(event.target.value); //get value
+
+      const settingsArray = Object.values(settings);
+      let decodedArray = decoded.split(" "); //split it into array
+
+      if (!(decodedArray.length === settingsArray.length)) {
+        if (event.target.value === "") return; //return if nothing
+
+        document.getElementById("errorMessage").innerText = "this is not a hex code.";
+        setTimeout(() => {
+          document.getElementById("errorMessage").innerText = "";
+        }, 1500); //this is not a hex code, if not the hex code I want
+      } else {
+        let index = 0;
+
+        for (const key in settings) {
+          settings[key] = decodedArray[index]; //get key and put the value in it.
+
+          index++;
+        }
+
+        setTimeout(() => {
+          document.getElementById("encodingInput").value = "";
+        }, 800);
+        draw();
+      }
+    }
+
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      className: "decodeDiv",
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+        children: "Decode: "
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 148,
+        columnNumber: 17
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
+        type: "text",
+        id: "encodingInput",
+        className: "decodeInput",
+        onChange: decodeFunc
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 149,
+        columnNumber: 17
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+        id: "errorMessage"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 150,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 147,
+      columnNumber: 13
+    }, this);
+  }
+
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   draw,
   Settings,
-  settings
+  settings,
+  Encoding,
+  Decoding
 });
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "Encoding");
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
 const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
@@ -334,7 +483,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "/Users/paulherklotz/Documents/Programmieren/React/first app/my-app/src/index.js";
+var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/index.js";
 
 
 
@@ -2757,6 +2906,38 @@ function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
     throw new TypeError('The "emitter" argument must be of type EventEmitter. Received type ' + typeof emitter);
   }
 }
+
+/***/ }),
+
+/***/ "./node_modules/hex-encode-decode/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/hex-encode-decode/index.js ***!
+  \*************************************************/
+/***/ ((module) => {
+
+function toHex() {
+  let char = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  return char.charCodeAt(0).toString(16);
+}
+
+module.exports = {
+  encode() {
+    let str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+    return str.split('').map(toHex).join('');
+  },
+
+  decode() {
+    let hex = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+    const result = [];
+
+    for (let i = 0; i < hex.length; i += 2) {
+      result.push(String.fromCharCode(parseInt(hex.substr(i, 2), 16)));
+    }
+
+    return result.join('');
+  }
+
+};
 
 /***/ }),
 
@@ -41506,7 +41687,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 30vw;\n  height: 3vw;\n  border: .1vw solid black;\n  margin-bottom: 2vw;\n  display: flex;\n  flex-direction: row;\n}", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;AACpC;;AAEA;EACE;aACW;AACb;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,wBAAwB;EACxB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,mBAAmB;AACrB","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 30vw;\n  height: 3vw;\n  border: .1vw solid black;\n  margin-bottom: 2vw;\n  display: flex;\n  flex-direction: row;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction: row;\n  margin-left: 1vw;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:10vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: 1vw;\n}", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,cAAc;AAChB;;AAEA;EACE;aACW;AACb;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;;AAEf;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,UAAU;AACZ;;AAEA;EACE;AACF;;AAEA;EACE,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,eAAe;AACjB","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction: row;\n  margin-left: 1vw;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:10vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: 1vw;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -42188,7 +42369,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("60e132634d5429053e11")
+/******/ 		__webpack_require__.h = () => ("269ae535a5e905dd297a")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
