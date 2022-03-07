@@ -1,18 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<!-- saved from url=(0022)http://localhost:3001/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="manifest" href="http://localhost:3001/manifest.json">
   <title>React App</title>
-</head>
+<script defer="" src="./index_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  display: flex;
+  flex-direction:column;
+}
+
+.canvasDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.interfaceDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.interfaceContainer{
+  width: 70%;
+  height: 98%;
+  margin: 0.5%;
+  display: flex;
+  flex-direction: unset;
+align-content: flex-start;
+}
+
+canvas{
+  width: 95%;
+  height: 95%;
+  border: .3vw solid black;
+  border-radius: 2vw;
+  background-color: white;
+}
+
+.settingDiv{
+  width: 20vw;
+  height: 3vw;
+  border: .1vw solid black;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction:row;
+  margin-left: 1vw;
+justify-content: space-evenly;
+}
+
+.coding{
+  width: 50vw;
+  height: 6vw;
+  border: .1vw solid black;
+  border-radius: 1vw;
+  margin: 0.5vw;
+}
+
+.decodeDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.encodeDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.decodeInput{
+  height:2vw;
+  width: 5vw;
+}
+
+input[type="range"]{
+  width:6vw
+}
+
+input[type="number"]{
+  height:2.5vw;
+  width: 5vw;
+}
+
+button{
+  margin-top: .9vw;
+  width: 3vw;
+  height: 1.5vw;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTthQUNXO0FBQ2I7O0FBRUE7RUFDRSxhQUFhO0VBQ2IscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLFdBQVc7RUFDWCxZQUFZO0VBQ1osYUFBYTtFQUNiLHFCQUFxQjtBQUN2Qix5QkFBeUI7QUFDekI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsV0FBVztFQUNYLHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCx3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCLDZCQUE2QjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxXQUFXO0VBQ1gsd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLDZCQUE2QjtBQUMvQjtBQUNBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQiw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsVUFBVTtBQUNaOztBQUVBO0VBQ0U7QUFDRjs7QUFFQTtFQUNFLFlBQVk7RUFDWixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsVUFBVTtFQUNWLGFBQWE7QUFDZiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGZvbnQtc2l6ZTogMXZ3O1xufVxuXG5jb2RlIHtcbiAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgbW9ub3NwYWNlO1xufVxuXG4uY29udGFpbmVye1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjpjb2x1bW47XG59XG5cbi5jYW52YXNEaXZ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xufVxuLmludGVyZmFjZURpdntcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG5cbi5pbnRlcmZhY2VDb250YWluZXJ7XG4gIHdpZHRoOiA3MCU7XG4gIGhlaWdodDogOTglO1xuICBtYXJnaW46IDAuNSU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiB1bnNldDtcbmFsaWduLWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XG59XG5cbmNhbnZhc3tcbiAgd2lkdGg6IDk1JTtcbiAgaGVpZ2h0OiA5NSU7XG4gIGJvcmRlcjogLjN2dyBzb2xpZCBibGFjaztcbiAgYm9yZGVyLXJhZGl1czogMnZ3O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cblxuLnNldHRpbmdEaXZ7XG4gIHdpZHRoOiAyMHZ3O1xuICBoZWlnaHQ6IDN2dztcbiAgYm9yZGVyOiAuMXZ3IHNvbGlkIGJsYWNrO1xuICBib3JkZXItcmFkaXVzOiAxdnc7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOnJvdztcbiAgbWFyZ2luLWxlZnQ6IDF2dztcbmp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xufVxuXG4uY29kaW5ne1xuICB3aWR0aDogNTB2dztcbiAgaGVpZ2h0OiA2dnc7XG4gIGJvcmRlcjogLjF2dyBzb2xpZCBibGFjaztcbiAgYm9yZGVyLXJhZGl1czogMXZ3O1xuICBtYXJnaW46IDAuNXZ3O1xufVxuXG4uZGVjb2RlRGl2e1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbn1cbi5lbmNvZGVEaXZ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xufVxuXG4uZGVjb2RlSW5wdXR7XG4gIGhlaWdodDoydnc7XG4gIHdpZHRoOiA1dnc7XG59XG5cbmlucHV0W3R5cGU9XCJyYW5nZVwiXXtcbiAgd2lkdGg6NnZ3XG59XG5cbmlucHV0W3R5cGU9XCJudW1iZXJcIl17XG4gIGhlaWdodDoyLjV2dztcbiAgd2lkdGg6IDV2dztcbn1cblxuYnV0dG9ue1xuICBtYXJnaW4tdG9wOiAuOXZ3O1xuICB3aWR0aDogM3Z3O1xuICBoZWlnaHQ6IDEuNXZ3O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style></head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-</body>
+  <div id="root"><div class="App"><div class="container"><div class="interfaceDiv"><div class="interfaceContainer"><div class="settingDiv" setting="amount"><p>amount</p><input type="range" id="00" min="0" max="200" step="1" value="20"><input type="number" id="01" step="1" value="20" style="width: 5vw;"></div><div class="settingDiv" setting="size"><p>size</p><input type="range" id="10" min="0" max="50" step="1" value="40"><input type="number" id="11" step="1" value="40" style="width: 5vw;"></div><div class="settingDiv" setting="distance"><p>distance</p><input type="range" id="20" min="0" max="75" step="1" value="0"><input type="number" id="21" step="1" value="0" style="width: 5vw;"></div><div class="settingDiv" setting="step"><p>step</p><input type="range" id="30" min="0" max="5" step="1" value="1"><input type="number" id="31" step="1" value="1" style="width: 5vw;"></div></div><div class="coding"><div class="encodeDiv"><div><p>Encoded hex-string:</p></div><div><button> copy</button></div><p id="isCopied"></p></div><div class="decodeDiv"><p>Decode: </p><input type="text" id="encodingInput" class="decodeInput"><p id="errorMessage"></p></div></div></div><div class="canvasDiv"><canvas id="test"></canvas></div></div></div></div>
 
-</html>
+
+</body></html>
