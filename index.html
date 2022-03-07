@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="manifest" href="http://localhost:3000/manifest.json">
+  <title>React App</title>
+<script defer="" src="./index_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.canvasDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.interfaceDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.interfaceContainer{
+  width: 98%;
+  height: 98%;
+  margin: 0.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+canvas{
+  width: 98%;
+  height: 98%;
+  border: .3vw solid black;
+  border-radius: 2vw;
+  background-color: white;
+}
+
+.settingDiv{
+  width: 20vw;
+  height: 3vw;
+  border: .1vw solid black;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1vw;
+}
+
+.coding{
+  width: 50vw;
+  height: 6vw;
+  border: .1vw solid black;
+  border-radius: 1vw;
+  margin: 0.5vw;
+
+}
+
+.decodeDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.encodeDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.decodeInput{
+  height:2vw;
+  width: 5vw;
+}
+
+input[type="range"]{
+  width:10vw
+}
+
+input[type="number"]{
+  height:2.5vw;
+  width: 5vw;
+}
+
+button{
+  margin-top: 1vw;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTthQUNXO0FBQ2I7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLFdBQVc7RUFDWCxZQUFZO0VBQ1osYUFBYTtFQUNiLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFVBQVU7RUFDVixXQUFXO0VBQ1gsd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztFQUNYLHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztFQUNYLHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsYUFBYTs7QUFFZjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsNkJBQTZCO0FBQy9CO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLFVBQVU7RUFDVixVQUFVO0FBQ1o7O0FBRUE7RUFDRTtBQUNGOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGVBQWU7QUFDakIiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJywgJ094eWdlbicsXG4gICAgJ1VidW50dScsICdDYW50YXJlbGwnLCAnRmlyYSBTYW5zJywgJ0Ryb2lkIFNhbnMnLCAnSGVsdmV0aWNhIE5ldWUnLFxuICAgIHNhbnMtc2VyaWY7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICBmb250LXNpemU6IDF2dztcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cblxuLmNvbnRhaW5lcntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmNhbnZhc0RpdntcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4uaW50ZXJmYWNlRGl2e1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbn1cblxuLmludGVyZmFjZUNvbnRhaW5lcntcbiAgd2lkdGg6IDk4JTtcbiAgaGVpZ2h0OiA5OCU7XG4gIG1hcmdpbjogMC41JTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbn1cblxuY2FudmFze1xuICB3aWR0aDogOTglO1xuICBoZWlnaHQ6IDk4JTtcbiAgYm9yZGVyOiAuM3Z3IHNvbGlkIGJsYWNrO1xuICBib3JkZXItcmFkaXVzOiAydnc7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG4uc2V0dGluZ0RpdntcbiAgd2lkdGg6IDIwdnc7XG4gIGhlaWdodDogM3Z3O1xuICBib3JkZXI6IC4xdncgc29saWQgYmxhY2s7XG4gIGJvcmRlci1yYWRpdXM6IDF2dztcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgbWFyZ2luLWxlZnQ6IDF2dztcbn1cblxuLmNvZGluZ3tcbiAgd2lkdGg6IDUwdnc7XG4gIGhlaWdodDogNnZ3O1xuICBib3JkZXI6IC4xdncgc29saWQgYmxhY2s7XG4gIGJvcmRlci1yYWRpdXM6IDF2dztcbiAgbWFyZ2luOiAwLjV2dztcblxufVxuXG4uZGVjb2RlRGl2e1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbn1cbi5lbmNvZGVEaXZ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xufVxuXG4uZGVjb2RlSW5wdXR7XG4gIGhlaWdodDoydnc7XG4gIHdpZHRoOiA1dnc7XG59XG5cbmlucHV0W3R5cGU9XCJyYW5nZVwiXXtcbiAgd2lkdGg6MTB2d1xufVxuXG5pbnB1dFt0eXBlPVwibnVtYmVyXCJde1xuICBoZWlnaHQ6Mi41dnc7XG4gIHdpZHRoOiA1dnc7XG59XG5cbmJ1dHRvbntcbiAgbWFyZ2luLXRvcDogMXZ3O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"><div class="App"><div class="container"><div class="interfaceDiv"><div class="interfaceContainer"><div class="settingDiv" setting="amount"><p>amount</p><input type="range" id="00" min="0" max="200" value="20"><input type="number" id="01" min="-5" value="20" style="width: 5vw;"></div><div class="settingDiv" setting="size"><p>size</p><input type="range" id="10" min="0" max="50" value="40"><input type="number" id="11" min="-5" value="40" style="width: 5vw;"></div><div class="settingDiv" setting="distance"><p>distance</p><input type="range" id="20" min="0" max="75" value="0"><input type="number" id="21" min="-5" value="0" style="width: 5vw;"></div></div><div class="coding"><div class="encodeDiv"><div><p>Encoded hex-string:</p></div><div><button> copy</button></div><p id="isCopied"></p></div><div class="decodeDiv"><p>Decode: </p><input type="text" id="encodingInput" class="decodeInput"><p id="errorMessage"></p></div></div></div><div class="canvasDiv"><canvas id="test"></canvas></div></div></div></div>
+
+
+</body></html>
