@@ -6,6 +6,7 @@ let settings = {
     "amount": "20",
     "size": "20",
     "distance": "0",
+    "step": "0.1"
 }
 
 function draw() {
@@ -62,14 +63,19 @@ function draw() {
 
 class Settings extends Component {
     render() {
-        const { setting, maximum, defaultValueProp, idProp, multiplier } = this.props
+        const { setting, maximum, defaultValueProp, idProp, multiplier, stepProp } = this.props
 
         function newValue(event) {
             let valueOfEvent = event.target.value
-            document.getElementById(idProp + "0").value = valueOfEvent; //sync number input with range input
-            document.getElementById(idProp + "1").value = valueOfEvent;
+            const rangeInput = document.getElementById(idProp + "0");
+            const numberInput = document.getElementById(idProp + "1");
+            rangeInput.value = valueOfEvent; //sync number input with range input
+            numberInput.value = valueOfEvent;
+            if (!(setting === "step")) { rangeInput.setAttribute("step", settings.step) }
+            else rangeInput.setAttribute("step", "0.1")
             valueOfEvent *= multiplier
             settings[`${setting}`] = valueOfEvent;
+
             draw();
             Encoding();
         }
@@ -77,8 +83,8 @@ class Settings extends Component {
         return (
             <div className='settingDiv' setting={setting}>
                 <p>{setting}</p>
-                <input type="range" onChange={newValue} id={idProp + "0"} min="0" max={maximum} defaultValue={defaultValueProp}></input>
-                <input type="number" onChange={newValue} id={idProp + "1"} style={{ width: 5 + "vw" }} defaultValue={defaultValueProp} min="-5"></input>
+                <input type="range" onChange={newValue} id={idProp + "0"} min="0" max={maximum} defaultValue={defaultValueProp} step={settings.step}></input>
+                <input type="number" onChange={newValue} id={idProp + "1"} style={{ width: 5 + "vw" }} defaultValue={defaultValueProp} step={settings.step}></input>
             </div >
         )
     }
