@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './App.css';
+import { encode, decode } from 'hex-encode-decode'
 
 let settings = {
-    "size": 20,
-    "amount": 20,
-    "distance": 0,
-
+    "amount": "20",
+    "size": "20",
+    "distance": "0",
 }
 
 function draw() {
@@ -66,12 +66,12 @@ class Settings extends Component {
 
         function newValue(event) {
             let valueOfEvent = event.target.value
-            document.getElementById(idProp + "0").value = valueOfEvent;
+            document.getElementById(idProp + "0").value = valueOfEvent; //sync number input with range input
             document.getElementById(idProp + "1").value = valueOfEvent;
             valueOfEvent *= multiplier
             settings[`${setting}`] = valueOfEvent;
             draw();
-            console.log(settings);
+            Encoding();
         }
 
         return (
@@ -84,4 +84,73 @@ class Settings extends Component {
     }
 }
 
-export default { draw, Settings, settings }
+
+//--------------------------------------
+//En- and decoding
+//--------------------------------------
+function Encoding() {
+    function copyToClipboard() {
+        function returnEncoded() {
+            return (encode(`${settings.amount} ${settings.size} ${settings.distance}`))//encode stuff
+        }
+        navigator.clipboard.writeText(returnEncoded());//copy to clipboard
+        console.log(returnEncoded());
+        console.log("copied");
+
+        const isCopied = document.getElementById("isCopied")
+        isCopied.innerText = "Copied!"
+        setTimeout(() => {
+            isCopied.innerText = ""
+        }, 1500);
+    }
+    return (
+        <div className='encodeDiv'>
+            <div>
+                <p>Encoded hex-string:</p>
+            </div>
+            <div>
+                <button onClick={copyToClipboard}> copy</button>
+            </div>
+            <p id="isCopied"></p>
+        </div>
+
+    )
+
+}
+
+class Decoding extends Component {
+    render() {
+        function decodeFunc(event) {
+            let decoded = decode(event.target.value); //get value
+            const settingsArray = Object.values(settings)
+
+            let decodedArray = decoded.split(" "); //split it into array
+            if (!(decodedArray.length === settingsArray.length)) {
+                if (event.target.value === "") return; //return if nothing
+                document.getElementById("errorMessage").innerText = "this is not a hex code."
+                setTimeout(() => {
+                    document.getElementById("errorMessage").innerText = ""
+                }, 1500); //this is not a hex code, if not the hex code I want
+            } else {
+                let index = 0
+                for (const key in settings) {
+                    settings[key] = decodedArray[index] //get key and put the value in it.
+                    index++
+                }
+                setTimeout(() => {
+                    document.getElementById("encodingInput").value = ""
+                }, 800);
+                draw()
+            }
+        }
+        return (
+            <div className='decodeDiv'>
+                <p>Decode: </p>
+                <input type="text" id='encodingInput' className='decodeInput' onChange={decodeFunc}></input>
+                <p id="errorMessage"></p>
+            </div>
+        )
+    }
+}
+
+export default { draw, Settings, settings, Encoding, Decoding }

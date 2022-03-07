@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1vw;
 }
 
 code {
@@ -40,14 +41,54 @@ canvas{
   width: 98%;
   height: 98%;
   border: .3vw solid black;
+  border-radius: 2vw;
   background-color: white;
 }
 
 .settingDiv{
-  width: 30vw;
+  width: 20vw;
   height: 3vw;
   border: .1vw solid black;
-  margin-bottom: 2vw;
+  border-radius: 1vw;
   display: flex;
   flex-direction: row;
+  margin-left: 1vw;
+}
+
+.coding{
+  width: 50vw;
+  height: 6vw;
+  border: .1vw solid black;
+  border-radius: 1vw;
+  margin: 0.5vw;
+
+}
+
+.decodeDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.encodeDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.decodeInput{
+  height:2vw;
+  width: 5vw;
+}
+
+input[type="range"]{
+  width:10vw
+}
+
+input[type="number"]{
+  height:2.5vw;
+  width: 5vw;
+}
+
+button{
+  margin-top: 1vw;
 }
