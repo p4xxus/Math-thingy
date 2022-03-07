@@ -60,6 +60,16 @@ function App() {
             fileName: _jsxFileName,
             lineNumber: 10,
             columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
+            setting: "step",
+            maximum: "5",
+            defaultValueProp: "0.1",
+            idProp: "3",
+            multiplier: "1"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 11,
+            columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
@@ -69,16 +79,16 @@ function App() {
           className: "coding",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Encoding, {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 13
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Decoding, {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 14,
+            lineNumber: 15,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 13,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
@@ -91,12 +101,12 @@ function App() {
           id: "test"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
@@ -181,7 +191,8 @@ var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/draw.js";
 let settings = {
   "amount": "20",
   "size": "20",
-  "distance": "0"
+  "distance": "0",
+  "step": "0.1"
 };
 
 function draw() {
@@ -238,13 +249,22 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       maximum,
       defaultValueProp,
       idProp,
-      multiplier
+      multiplier,
+      stepProp
     } = this.props;
 
     function newValue(event) {
       let valueOfEvent = event.target.value;
-      document.getElementById(idProp + "0").value = valueOfEvent;
-      document.getElementById(idProp + "1").value = valueOfEvent;
+      const rangeInput = document.getElementById(idProp + "0");
+      const numberInput = document.getElementById(idProp + "1");
+      rangeInput.value = valueOfEvent; //sync number input with range input
+
+      numberInput.value = valueOfEvent;
+
+      if (!(setting === "step")) {
+        rangeInput.setAttribute("step", settings.step);
+      } else rangeInput.setAttribute("step", "0.1");
+
       valueOfEvent *= multiplier;
       settings[`${setting}`] = valueOfEvent;
       draw();
@@ -258,7 +278,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         children: setting
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 85,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "range",
@@ -266,10 +286,11 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         id: idProp + "0",
         min: "0",
         max: maximum,
-        defaultValue: defaultValueProp
+        defaultValue: defaultValueProp,
+        step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 80,
+        lineNumber: 86,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "number",
@@ -279,15 +300,15 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
           width: 5 + "vw"
         },
         defaultValue: defaultValueProp,
-        min: "-5"
+        step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 87,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 84,
       columnNumber: 13
     }, this);
   }
@@ -321,12 +342,12 @@ function Encoding() {
         children: "Encoded hex-string:"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 109,
+        lineNumber: 115,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 114,
       columnNumber: 13
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("button", {
@@ -334,23 +355,23 @@ function Encoding() {
         children: " copy"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 118,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 117,
       columnNumber: 13
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
       id: "isCopied"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 114,
+      lineNumber: 120,
       columnNumber: 13
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 107,
+    lineNumber: 113,
     columnNumber: 9
   }, this);
 }
@@ -394,7 +415,7 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         children: "Decode: "
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 148,
+        lineNumber: 154,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
         type: "text",
@@ -403,18 +424,18 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         onChange: decodeFunc
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 149,
+        lineNumber: 155,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
         id: "errorMessage"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 150,
+        lineNumber: 156,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 153,
       columnNumber: 13
     }, this);
   }
@@ -39186,14 +39207,14 @@ var WebSocketClient = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&reconnect=10":
+/***/ "./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=none&reconnect=10":
 /*!********************************************************************************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&reconnect=10 ***!
+  !*** ./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=none&reconnect=10 ***!
   \********************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-var __resourceQuery = "?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&reconnect=10";
+var __resourceQuery = "?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=none&reconnect=10";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack/hot/log.js */ "./node_modules/webpack/hot/log.js");
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -41687,7 +41708,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction: row;\n  margin-left: 1vw;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:10vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: 1vw;\n}", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,cAAc;AAChB;;AAEA;EACE;aACW;AACb;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;;AAEf;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,UAAU;AACZ;;AAEA;EACE;AACF;;AAEA;EACE,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,eAAe;AACjB","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction: row;\n  margin-left: 1vw;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:10vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: 1vw;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction: row;\n  margin-left: 1vw;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:10vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: .9vw;\n  width: 3vw;\n  height: 1.5vw;\n}", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,cAAc;AAChB;;AAEA;EACE;aACW;AACb;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;;AAEf;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,UAAU;AACZ;;AAEA;EACE;AACF;;AAEA;EACE,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,aAAa;AACf","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction: column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 98%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: row;\n}\n\ncanvas{\n  width: 98%;\n  height: 98%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction: row;\n  margin-left: 1vw;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:10vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: .9vw;\n  width: 3vw;\n  height: 1.5vw;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -42369,7 +42390,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("269ae535a5e905dd297a")
+/******/ 		__webpack_require__.h = () => ("b9ad6ad76069496fbc6f")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -43474,7 +43495,7 @@ if (true) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
-/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=none&reconnect=10");
+/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=none&reconnect=10");
 /******/ 	__webpack_require__("./node_modules/webpack/hot/dev-server.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
