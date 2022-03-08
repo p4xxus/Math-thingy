@@ -25,17 +25,18 @@ code {
 }
 .interfaceDiv{
   display: flex;
-  justify-content: center;
   flex-direction: row;
 }
 
 .interfaceContainer{
   width: 70%;
   height: 98%;
-  margin: 0.5%;
+  margin-top: 1vw;
   display: flex;
   flex-direction: unset;
-align-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 canvas{
@@ -54,15 +55,17 @@ canvas{
   display: flex;
   flex-direction:row;
   margin-left: 1vw;
+  margin-bottom: 1vw;
 justify-content: space-evenly;
 }
 
 .coding{
-  width: 50vw;
+  width: 30vw;
   height: 6vw;
   border: .1vw solid black;
   border-radius: 1vw;
-  margin: 0.5vw;
+  margin: 1.5vw;
+  margin-right: 3vw;
 }
 
 .decodeDiv{

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './App.css';
-import { encode, decode } from 'hex-encode-decode'
 
 let settings = {
     "amount": "20",
@@ -64,13 +63,9 @@ function draw() {
 class Settings extends Component {
     render() {
         const { setting, maximum, defaultValueProp, idProp } = this.props
-
-        function newValue(event) {
-            let valueOfEvent = event.target.value
+        function syncStep() {
             const rangeInput = document.getElementById(idProp + "0");
             const numberInput = document.getElementById(idProp + "1");
-            rangeInput.value = valueOfEvent; //sync number input with range input
-            numberInput.value = valueOfEvent;
             if (!(setting === "step")) { //step always 0,005
                 rangeInput.setAttribute("step", settings.step);
                 numberInput.setAttribute("step", settings.step);
@@ -83,6 +78,16 @@ class Settings extends Component {
                 rangeInput.setAttribute("min", "0.005");
                 numberInput.setAttribute("min", "0.005");
             }
+            console.log("cahnged");
+        }
+
+        function newValue(event) {
+            let valueOfEvent = event.target.value
+            const rangeInput = document.getElementById(idProp + "0");
+            const numberInput = document.getElementById(idProp + "1");
+            rangeInput.value = valueOfEvent; //sync number input with range input
+            numberInput.value = valueOfEvent;
+
             // if (setting === "amount") { rangeInput.setAttribute("step", "1"); numberInput.setAttribute("step", "1") }
             settings[`${setting}`] = valueOfEvent;
 
@@ -96,8 +101,8 @@ class Settings extends Component {
         return (
             <div className='settingDiv' setting={setting}>
                 <p>{setting}</p>
-                <input type="range" onChange={newValue} id={idProp + "0"} min="0" max={maximum} defaultValue={defaultValueProp} step={settings.step}></input>
-                <input type="number" onChange={newValue} id={idProp + "1"} style={{ width: 5 + "vw" }} defaultValue={defaultValueProp} step={settings.step}></input>
+                <input type="range" onMouseEnter={syncStep} onChange={newValue} id={idProp + "0"} min="0" max={maximum} defaultValue={defaultValueProp} step={settings.step}></input>
+                <input type="number" onMouseEnter={syncStep} onChange={newValue} id={idProp + "1"} style={{ width: 5 + "vw" }} defaultValue={defaultValueProp} step={settings.step}></input>
             </div >
         )
     }
@@ -110,7 +115,7 @@ class Settings extends Component {
 function Encoding() {
     function copyToClipboard() {
         function returnEncoded() {
-            return (encode(`${settings.amount} ${settings.size} ${settings.distance} ${settings.step}`))//encode stuff
+            return (window.btoa(`${settings.amount} ${settings.size} ${settings.distance} ${settings.step}`))//encode stuff
         }
         navigator.clipboard.writeText(returnEncoded());//copy to clipboard
         console.log(returnEncoded());
@@ -125,7 +130,7 @@ function Encoding() {
     return (
         <div className='encodeDiv'>
             <div>
-                <p>Encoded hex-string:</p>
+                <p>Base64-Encoded string:</p>
             </div>
             <div>
                 <button onClick={copyToClipboard}> copy</button>
@@ -140,13 +145,13 @@ function Encoding() {
 class Decoding extends Component {
     render() {
         function decodeFunc(event) {
-            let decoded = decode(event.target.value); //get value
+            let decoded = window.atob(event.target.value); //get value
             const settingsArray = Object.values(settings)
 
             let decodedArray = decoded.split(" "); //split it into array
             if (!(decodedArray.length === settingsArray.length)) {
                 if (event.target.value === "") return; //return if nothing
-                document.getElementById("errorMessage").innerText = "Wrong hex code."
+                document.getElementById("errorMessage").innerText = "Wrong code."
                 setTimeout(() => {
                     document.getElementById("errorMessage").innerText = ""
                 }, 1500); //this is not a hex code, if not the hex code I want
@@ -156,16 +161,16 @@ class Decoding extends Component {
                     settings[key] = decodedArray[index] //get key and put the value in it.
                     index++
                 }
-                setTimeout(() => {
-                    document.getElementById("encodingInput").value = ""
-                }, 800);
                 decoderSync() //sync and draw
                 draw()
             }
+            setTimeout(() => {
+                document.getElementById("encodingInput").value = ""
+            }, 800);
         }
         return (
             <div className='decodeDiv'>
-                <p>Decode: </p>
+                <p>Paste to decode: </p>
                 <input type="text" id='encodingInput' className='decodeInput' onChange={decodeFunc}></input>
                 <p id="errorMessage"></p>
             </div>
@@ -193,5 +198,6 @@ function decoderSync() {
     }
 
 }
+
 
 export default { draw, Settings, settings, Encoding, Decoding }

@@ -13,7 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _draw__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./draw */ "./src/draw.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var _darkmode__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./darkmode */ "./src/darkmode.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -21,98 +23,106 @@ var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/App.js";
 
 
 
+
+
 function App() {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
     className: "App",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
       className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
         className: "interfaceDiv",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+          className: "darkmode"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
           className: "interfaceContainer",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "amount",
-            maximum: "200",
+            maximum: "500",
             defaultValueProp: "20",
             idProp: "0"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 8,
+            lineNumber: 13,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "size",
             maximum: "50",
             defaultValueProp: "20",
             idProp: "1"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 9,
+            lineNumber: 14,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "distance",
             maximum: "75",
             defaultValueProp: "0",
             idProp: "2"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 10,
+            lineNumber: 15,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "step",
             maximum: "5",
             defaultValueProp: "1",
             idProp: "3"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 11,
+            lineNumber: 16,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 7,
+          lineNumber: 12,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
           className: "coding",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Encoding, {}, void 0, false, {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Encoding, {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 14,
+            lineNumber: 19,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Decoding, {}, void 0, false, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Decoding, {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 15,
+            lineNumber: 20,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 18,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 6,
+        lineNumber: 9,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
         className: "canvasDiv",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("canvas", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("canvas", {
           id: "test"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 24,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 23,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 8,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 4,
+    lineNumber: 7,
     columnNumber: 5
   }, this);
 }
@@ -160,6 +170,98 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 /***/ }),
 
+/***/ "./src/darkmode.js":
+/*!*************************!*\
+  !*** ./src/darkmode.js ***!
+  \*************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var darkmode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! darkmode-js */ "./node_modules/darkmode-js/lib/darkmode-js.js");
+/* harmony import */ var darkmode_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(darkmode_js__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+
+const options = {
+  bottom: '89%',
+  // default: '32px'
+  right: 'unset',
+  // default: '32px'
+  left: '7.5%',
+  // default: 'unset'
+  time: '1s',
+  // default: '0.3s'
+  mixColor: '#fff',
+  // default: '#fff'
+  backgroundColor: '#fff',
+  // default: '#fff'
+  buttonColorDark: '#100f2c',
+  // default: '#100f2c'
+  buttonColorLight: '#fff',
+  // default: '#fff'
+  saveInCookies: false,
+  // default: true,
+  label: '🌓',
+  // default: ''
+  autoMatchOsTheme: true // default: true
+
+};
+const darkmode = new (darkmode_js__WEBPACK_IMPORTED_MODULE_0___default())(options);
+darkmode.showWidget(); // class DarkmodeClass extends Component {
+//     render() {
+//         function toogleDarkmode() {
+//             darkmode.toggle();
+//             console.log(darkmode.isActivated())
+//         }
+//         return (
+//             <div>
+//                 <div>
+//                     <p>Darkmode</p>
+//                 </div>
+//                 <div className='checkboxDiv'>
+//                     <input type="checkbox" id='darkmodeCheckbox' onChange={toogleDarkmode}></input>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+// export default DarkmodeClass
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (true) {
+		let errorOverlay;
+		if (true) {
+			errorOverlay = false;
+		}
+		let testMode;
+		if (typeof __react_refresh_test__ !== 'undefined') {
+			testMode = __react_refresh_test__;
+		}
+		return __react_refresh_utils__.executeRuntime(
+			exports,
+			$ReactRefreshModuleId$,
+			module.hot,
+			errorOverlay,
+			testMode
+		);
+	}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ }),
+
 /***/ "./src/draw.js":
 /*!*********************!*\
   !*** ./src/draw.js ***!
@@ -173,14 +275,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
-/* harmony import */ var hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! hex-encode-decode */ "./node_modules/hex-encode-decode/index.js");
-/* harmony import */ var hex_encode_decode__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
 var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/draw.js";
-
 
 
 
@@ -247,13 +346,9 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       idProp
     } = this.props;
 
-    function newValue(event) {
-      let valueOfEvent = event.target.value;
+    function syncStep() {
       const rangeInput = document.getElementById(idProp + "0");
       const numberInput = document.getElementById(idProp + "1");
-      rangeInput.value = valueOfEvent; //sync number input with range input
-
-      numberInput.value = valueOfEvent;
 
       if (!(setting === "step")) {
         //step always 0,005
@@ -270,8 +365,18 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
 
         rangeInput.setAttribute("min", "0.005");
         numberInput.setAttribute("min", "0.005");
-      } // if (setting === "amount") { rangeInput.setAttribute("step", "1"); numberInput.setAttribute("step", "1") }
+      }
 
+      console.log("cahnged");
+    }
+
+    function newValue(event) {
+      let valueOfEvent = event.target.value;
+      const rangeInput = document.getElementById(idProp + "0");
+      const numberInput = document.getElementById(idProp + "1");
+      rangeInput.value = valueOfEvent; //sync number input with range input
+
+      numberInput.value = valueOfEvent; // if (setting === "amount") { rangeInput.setAttribute("step", "1"); numberInput.setAttribute("step", "1") }
 
       settings[`${setting}`] = valueOfEvent;
       draw();
@@ -283,17 +388,18 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         newValue();
       });
     });
-    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
       className: "settingDiv",
       setting: setting,
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
         children: setting
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 103,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
         type: "range",
+        onMouseEnter: syncStep,
         onChange: newValue,
         id: idProp + "0",
         min: "0",
@@ -302,10 +408,11 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 104,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
         type: "number",
+        onMouseEnter: syncStep,
         onChange: newValue,
         id: idProp + "1",
         style: {
@@ -315,12 +422,12 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 100,
+        lineNumber: 105,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 102,
       columnNumber: 13
     }, this);
   }
@@ -333,7 +440,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
 function Encoding() {
   function copyToClipboard() {
     function returnEncoded() {
-      return (0,hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__.encode)(`${settings.amount} ${settings.size} ${settings.distance} ${settings.step}`); //encode stuff
+      return window.btoa(`${settings.amount} ${settings.size} ${settings.distance} ${settings.step}`); //encode stuff
     }
 
     navigator.clipboard.writeText(returnEncoded()); //copy to clipboard
@@ -347,43 +454,43 @@ function Encoding() {
     }, 1500);
   }
 
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
     className: "encodeDiv",
-    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
-      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
-        children: "Encoded hex-string:"
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
+        children: "Base64-Encoded string:"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 128,
+        lineNumber: 133,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 127,
+      lineNumber: 132,
       columnNumber: 13
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
-      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("button", {
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("button", {
         onClick: copyToClipboard,
         children: " copy"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 131,
+        lineNumber: 136,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 130,
+      lineNumber: 135,
       columnNumber: 13
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
       id: "isCopied"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 133,
+      lineNumber: 138,
       columnNumber: 13
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 126,
+    lineNumber: 131,
     columnNumber: 9
   }, this);
 }
@@ -393,7 +500,7 @@ _c = Encoding;
 class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
     function decodeFunc(event) {
-      let decoded = (0,hex_encode_decode__WEBPACK_IMPORTED_MODULE_2__.decode)(event.target.value); //get value
+      let decoded = window.atob(event.target.value); //get value
 
       const settingsArray = Object.values(settings);
       let decodedArray = decoded.split(" "); //split it into array
@@ -401,7 +508,7 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       if (!(decodedArray.length === settingsArray.length)) {
         if (event.target.value === "") return; //return if nothing
 
-        document.getElementById("errorMessage").innerText = "Wrong hex code.";
+        document.getElementById("errorMessage").innerText = "Wrong code.";
         setTimeout(() => {
           document.getElementById("errorMessage").innerText = "";
         }, 1500); //this is not a hex code, if not the hex code I want
@@ -414,42 +521,43 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
           index++;
         }
 
-        setTimeout(() => {
-          document.getElementById("encodingInput").value = "";
-        }, 800);
         decoderSync(); //sync and draw
 
         draw();
       }
+
+      setTimeout(() => {
+        document.getElementById("encodingInput").value = "";
+      }, 800);
     }
 
-    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
       className: "decodeDiv",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
-        children: "Decode: "
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
+        children: "Paste to decode: "
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 168,
+        lineNumber: 173,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
         type: "text",
         id: "encodingInput",
         className: "decodeInput",
         onChange: decodeFunc
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 169,
+        lineNumber: 174,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
         id: "errorMessage"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 170,
+        lineNumber: 175,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 167,
+      lineNumber: 172,
       columnNumber: 13
     }, this);
   }
@@ -2483,6 +2591,517 @@ module.exports = function (item) {
 
 /***/ }),
 
+/***/ "./node_modules/darkmode-js/lib/darkmode-js.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/darkmode-js/lib/darkmode-js.js ***!
+  \*****************************************************/
+/***/ (function(module) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+  if (true) module.exports = factory();else {}
+})(typeof self !== 'undefined' ? self : this, function () {
+  return (
+    /******/
+    function (modules) {
+      // webpackBootstrap
+
+      /******/
+      // The module cache
+
+      /******/
+      var installedModules = {};
+      /******/
+
+      /******/
+      // The require function
+
+      /******/
+
+      function __nested_webpack_require_661__(moduleId) {
+        /******/
+
+        /******/
+        // Check if module is in cache
+
+        /******/
+        if (installedModules[moduleId]) {
+          /******/
+          return installedModules[moduleId].exports;
+          /******/
+        }
+        /******/
+        // Create a new module (and put it into the cache)
+
+        /******/
+
+
+        var module = installedModules[moduleId] = {
+          /******/
+          i: moduleId,
+
+          /******/
+          l: false,
+
+          /******/
+          exports: {}
+          /******/
+
+        };
+        /******/
+
+        /******/
+        // Execute the module function
+
+        /******/
+
+        modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_661__);
+        /******/
+
+        /******/
+        // Flag the module as loaded
+
+        /******/
+
+        module.l = true;
+        /******/
+
+        /******/
+        // Return the exports of the module
+
+        /******/
+
+        return module.exports;
+        /******/
+      }
+      /******/
+
+      /******/
+
+      /******/
+      // expose the modules object (__webpack_modules__)
+
+      /******/
+
+
+      __nested_webpack_require_661__.m = modules;
+      /******/
+
+      /******/
+      // expose the module cache
+
+      /******/
+
+      __nested_webpack_require_661__.c = installedModules;
+      /******/
+
+      /******/
+      // define getter function for harmony exports
+
+      /******/
+
+      __nested_webpack_require_661__.d = function (exports, name, getter) {
+        /******/
+        if (!__nested_webpack_require_661__.o(exports, name)) {
+          /******/
+          Object.defineProperty(exports, name, {
+            enumerable: true,
+            get: getter
+          });
+          /******/
+        }
+        /******/
+
+      };
+      /******/
+
+      /******/
+      // define __esModule on exports
+
+      /******/
+
+
+      __nested_webpack_require_661__.r = function (exports) {
+        /******/
+        if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+          /******/
+          Object.defineProperty(exports, Symbol.toStringTag, {
+            value: 'Module'
+          });
+          /******/
+        }
+        /******/
+
+
+        Object.defineProperty(exports, '__esModule', {
+          value: true
+        });
+        /******/
+      };
+      /******/
+
+      /******/
+      // create a fake namespace object
+
+      /******/
+      // mode & 1: value is a module id, require it
+
+      /******/
+      // mode & 2: merge all properties of value into the ns
+
+      /******/
+      // mode & 4: return value when already ns object
+
+      /******/
+      // mode & 8|1: behave like require
+
+      /******/
+
+
+      __nested_webpack_require_661__.t = function (value, mode) {
+        /******/
+        if (mode & 1) value = __nested_webpack_require_661__(value);
+        /******/
+
+        if (mode & 8) return value;
+        /******/
+
+        if (mode & 4 && typeof value === 'object' && value && value.__esModule) return value;
+        /******/
+
+        var ns = Object.create(null);
+        /******/
+
+        __nested_webpack_require_661__.r(ns);
+        /******/
+
+
+        Object.defineProperty(ns, 'default', {
+          enumerable: true,
+          value: value
+        });
+        /******/
+
+        if (mode & 2 && typeof value != 'string') for (var key in value) __nested_webpack_require_661__.d(ns, key, function (key) {
+          return value[key];
+        }.bind(null, key));
+        /******/
+
+        return ns;
+        /******/
+      };
+      /******/
+
+      /******/
+      // getDefaultExport function for compatibility with non-harmony modules
+
+      /******/
+
+
+      __nested_webpack_require_661__.n = function (module) {
+        /******/
+        var getter = module && module.__esModule ?
+        /******/
+        function getDefault() {
+          return module['default'];
+        } :
+        /******/
+        function getModuleExports() {
+          return module;
+        };
+        /******/
+
+        __nested_webpack_require_661__.d(getter, 'a', getter);
+        /******/
+
+
+        return getter;
+        /******/
+      };
+      /******/
+
+      /******/
+      // Object.prototype.hasOwnProperty.call
+
+      /******/
+
+
+      __nested_webpack_require_661__.o = function (object, property) {
+        return Object.prototype.hasOwnProperty.call(object, property);
+      };
+      /******/
+
+      /******/
+      // __webpack_public_path__
+
+      /******/
+
+
+      __nested_webpack_require_661__.p = "";
+      /******/
+
+      /******/
+
+      /******/
+      // Load entry module and return exports
+
+      /******/
+
+      return __nested_webpack_require_661__(__nested_webpack_require_661__.s = "./src/index.js");
+      /******/
+    }
+    /************************************************************************/
+
+    /******/
+    ({
+      /***/
+      "./src/darkmode.js":
+      /*!*************************!*\
+        !*** ./src/darkmode.js ***!
+        \*************************/
+
+      /*! no static exports found */
+
+      /***/
+      function (module, exports, __webpack_require__) {
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+          value: true
+        });
+        exports.default = exports.IS_BROWSER = void 0;
+
+        function _classCallCheck(instance, Constructor) {
+          if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+          }
+        }
+
+        function _defineProperties(target, props) {
+          for (var i = 0; i < props.length; i++) {
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+          }
+        }
+
+        function _createClass(Constructor, protoProps, staticProps) {
+          if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+          if (staticProps) _defineProperties(Constructor, staticProps);
+          return Constructor;
+        }
+
+        var IS_BROWSER = typeof window !== 'undefined';
+        exports.IS_BROWSER = IS_BROWSER;
+
+        var Darkmode = /*#__PURE__*/function () {
+          function Darkmode(options) {
+            _classCallCheck(this, Darkmode);
+
+            if (!IS_BROWSER) {
+              return;
+            }
+
+            var defaultOptions = {
+              bottom: '32px',
+              right: '32px',
+              left: 'unset',
+              time: '0.3s',
+              mixColor: '#fff',
+              backgroundColor: '#fff',
+              buttonColorDark: '#100f2c',
+              buttonColorLight: '#fff',
+              label: '',
+              saveInCookies: true,
+              autoMatchOsTheme: true
+            };
+            options = Object.assign({}, defaultOptions, options);
+            var css = "\n      .darkmode-layer {\n        position: fixed;\n        pointer-events: none;\n        background: ".concat(options.mixColor, ";\n        transition: all ").concat(options.time, " ease;\n        mix-blend-mode: difference;\n      }\n\n      .darkmode-layer--button {\n        width: 2.9rem;\n        height: 2.9rem;\n        border-radius: 50%;\n        right: ").concat(options.right, ";\n        bottom: ").concat(options.bottom, ";\n        left: ").concat(options.left, ";\n      }\n\n      .darkmode-layer--simple {\n        width: 100%;\n        height: 100%;\n        top: 0;\n        left: 0;\n        transform: scale(1) !important;\n      }\n\n      .darkmode-layer--expanded {\n        transform: scale(100);\n        border-radius: 0;\n      }\n\n      .darkmode-layer--no-transition {\n        transition: none;\n      }\n\n      .darkmode-toggle {\n        background: ").concat(options.buttonColorDark, ";\n        width: 3rem;\n        height: 3rem;\n        position: fixed;\n        border-radius: 50%;\n        border:none;\n        right: ").concat(options.right, ";\n        bottom: ").concat(options.bottom, ";\n        left: ").concat(options.left, ";\n        cursor: pointer;\n        transition: all 0.5s ease;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n      }\n\n      .darkmode-toggle--white {\n        background: ").concat(options.buttonColorLight, ";\n      }\n\n      .darkmode-toggle--inactive {\n        display: none;\n      }\n\n      .darkmode-background {\n        background: ").concat(options.backgroundColor, ";\n        position: fixed;\n        pointer-events: none;\n        z-index: -10;\n        width: 100%;\n        height: 100%;\n        top: 0;\n        left: 0;\n      }\n\n      img, .darkmode-ignore {\n        isolation: isolate;\n        display: inline-block;\n      }\n\n      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {\n        .darkmode-toggle {display: none !important}\n      }\n\n      @supports (-ms-ime-align:auto), (-ms-accelerator:true) {\n        .darkmode-toggle {display: none !important}\n      }\n    ");
+            var layer = document.createElement('div');
+            var button = document.createElement('button');
+            var background = document.createElement('div');
+            button.innerHTML = options.label;
+            button.classList.add('darkmode-toggle--inactive');
+            layer.classList.add('darkmode-layer');
+            background.classList.add('darkmode-background');
+            var darkmodeActivated = window.localStorage.getItem('darkmode') === 'true';
+            var preferedThemeOs = options.autoMatchOsTheme && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var darkmodeNeverActivatedByAction = window.localStorage.getItem('darkmode') === null;
+
+            if (darkmodeActivated === true && options.saveInCookies || darkmodeNeverActivatedByAction && preferedThemeOs) {
+              layer.classList.add('darkmode-layer--expanded', 'darkmode-layer--simple', 'darkmode-layer--no-transition');
+              button.classList.add('darkmode-toggle--white');
+              document.body.classList.add('darkmode--activated');
+            }
+
+            document.body.insertBefore(button, document.body.firstChild);
+            document.body.insertBefore(layer, document.body.firstChild);
+            document.body.insertBefore(background, document.body.firstChild);
+            this.addStyle(css);
+            this.button = button;
+            this.layer = layer;
+            this.saveInCookies = options.saveInCookies;
+            this.time = options.time;
+          }
+
+          _createClass(Darkmode, [{
+            key: "addStyle",
+            value: function addStyle(css) {
+              var linkElement = document.createElement('link');
+              linkElement.setAttribute('rel', 'stylesheet');
+              linkElement.setAttribute('type', 'text/css');
+              linkElement.setAttribute('href', 'data:text/css;charset=UTF-8,' + encodeURIComponent(css));
+              document.head.appendChild(linkElement);
+            }
+          }, {
+            key: "showWidget",
+            value: function showWidget() {
+              var _this = this;
+
+              if (!IS_BROWSER) {
+                return;
+              }
+
+              var button = this.button;
+              var layer = this.layer;
+              var time = parseFloat(this.time) * 1000;
+              button.classList.add('darkmode-toggle');
+              button.classList.remove('darkmode-toggle--inactive');
+              button.setAttribute("aria-label", "Activate dark mode");
+              button.setAttribute("aria-checked", "false");
+              button.setAttribute("role", "checkbox");
+              layer.classList.add('darkmode-layer--button');
+              button.addEventListener('click', function () {
+                var isDarkmode = _this.isActivated();
+
+                if (!isDarkmode) {
+                  layer.classList.add('darkmode-layer--expanded');
+                  button.setAttribute('disabled', true);
+                  setTimeout(function () {
+                    layer.classList.add('darkmode-layer--no-transition');
+                    layer.classList.add('darkmode-layer--simple');
+                    button.removeAttribute('disabled');
+                  }, time);
+                } else {
+                  layer.classList.remove('darkmode-layer--simple');
+                  button.setAttribute('disabled', true);
+                  setTimeout(function () {
+                    layer.classList.remove('darkmode-layer--no-transition');
+                    layer.classList.remove('darkmode-layer--expanded');
+                    button.removeAttribute('disabled');
+                  }, 1);
+                }
+
+                button.classList.toggle('darkmode-toggle--white');
+                document.body.classList.toggle('darkmode--activated');
+                window.localStorage.setItem('darkmode', !isDarkmode);
+              });
+            }
+          }, {
+            key: "toggle",
+            value: function toggle() {
+              if (!IS_BROWSER) {
+                return;
+              }
+
+              var layer = this.layer;
+              var isDarkmode = this.isActivated();
+              var button = this.button;
+              layer.classList.toggle('darkmode-layer--simple');
+              document.body.classList.toggle('darkmode--activated');
+              window.localStorage.setItem('darkmode', !isDarkmode);
+              button.setAttribute("aria-label", "De-activate dark mode");
+              button.setAttribute("aria-checked", "true");
+            }
+          }, {
+            key: "isActivated",
+            value: function isActivated() {
+              if (!IS_BROWSER) {
+                return null;
+              }
+
+              return document.body.classList.contains('darkmode--activated');
+            }
+          }]);
+
+          return Darkmode;
+        }();
+
+        exports.default = Darkmode;
+        /***/
+      },
+
+      /***/
+      "./src/index.js":
+      /*!**********************!*\
+        !*** ./src/index.js ***!
+        \**********************/
+
+      /*! no static exports found */
+
+      /***/
+      function (module, exports, __nested_webpack_require_14724__) {
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+          value: true
+        });
+        exports.default = void 0;
+
+        var _darkmode = _interopRequireWildcard(__nested_webpack_require_14724__(
+        /*! ./darkmode */
+        "./src/darkmode.js"));
+
+        function _interopRequireWildcard(obj) {
+          if (obj && obj.__esModule) {
+            return obj;
+          } else {
+            var newObj = {};
+
+            if (obj != null) {
+              for (var key in obj) {
+                if (Object.prototype.hasOwnProperty.call(obj, key)) {
+                  var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};
+
+                  if (desc.get || desc.set) {
+                    Object.defineProperty(newObj, key, desc);
+                  } else {
+                    newObj[key] = obj[key];
+                  }
+                }
+              }
+            }
+
+            newObj.default = obj;
+            return newObj;
+          }
+        }
+
+        var _default = _darkmode.default;
+        /* eslint-disable */
+
+        exports.default = _default;
+
+        if (_darkmode.IS_BROWSER) {
+          (function (window) {
+            window.Darkmode = _darkmode.default;
+          })(window);
+        }
+        /* eslint-enable */
+
+
+        module.exports = exports["default"];
+        /***/
+      }
+      /******/
+
+    })
+  );
+});
+
+/***/ }),
+
 /***/ "./node_modules/events/events.js":
 /*!***************************************!*\
   !*** ./node_modules/events/events.js ***!
@@ -2956,38 +3575,6 @@ function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
     throw new TypeError('The "emitter" argument must be of type EventEmitter. Received type ' + typeof emitter);
   }
 }
-
-/***/ }),
-
-/***/ "./node_modules/hex-encode-decode/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/hex-encode-decode/index.js ***!
-  \*************************************************/
-/***/ ((module) => {
-
-function toHex() {
-  let char = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  return char.charCodeAt(0).toString(16);
-}
-
-module.exports = {
-  encode() {
-    let str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-    return str.split('').map(toHex).join('');
-  },
-
-  decode() {
-    let hex = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-    const result = [];
-
-    for (let i = 0; i < hex.length; i += 2) {
-      result.push(String.fromCharCode(parseInt(hex.substr(i, 2), 16)));
-    }
-
-    return result.join('');
-  }
-
-};
 
 /***/ }),
 
@@ -41709,7 +42296,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".darkmode{ \n    height: 6vw;\n    width: 5vw;\n    margin: 1.5vw;\n    margin-left: 3vw;\n}\n/* input[type=\"checkbox\"]{\n    width: 2vw;\n    height: 2vw;\n    margin: 0;\n    margin-left: 25%;\n}\n.checkboxDiv{\n    align-content: center;\n} */", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,UAAU;IACV,aAAa;IACb,gBAAgB;AACpB;AACA;;;;;;;;GAQG","sourcesContent":[".darkmode{ \n    height: 6vw;\n    width: 5vw;\n    margin: 1.5vw;\n    margin-left: 3vw;\n}\n/* input[type=\"checkbox\"]{\n    width: 2vw;\n    height: 2vw;\n    margin: 0;\n    margin-left: 25%;\n}\n.checkboxDiv{\n    align-content: center;\n} */"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -41737,7 +42324,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction:column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 70%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: unset;\nalign-content: flex-start;\n}\n\ncanvas{\n  width: 95%;\n  height: 95%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction:row;\n  margin-left: 1vw;\njustify-content: space-evenly;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:6vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: .9vw;\n  width: 3vw;\n  height: 1.5vw;\n}", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,cAAc;AAChB;;AAEA;EACE;aACW;AACb;;AAEA;EACE,aAAa;EACb,qBAAqB;AACvB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,YAAY;EACZ,aAAa;EACb,qBAAqB;AACvB,yBAAyB;AACzB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,kBAAkB;EAClB,gBAAgB;AAClB,6BAA6B;AAC7B;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,UAAU;AACZ;;AAEA;EACE;AACF;;AAEA;EACE,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,aAAa;AACf","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction:column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 70%;\n  height: 98%;\n  margin: 0.5%;\n  display: flex;\n  flex-direction: unset;\nalign-content: flex-start;\n}\n\ncanvas{\n  width: 95%;\n  height: 95%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction:row;\n  margin-left: 1vw;\njustify-content: space-evenly;\n}\n\n.coding{\n  width: 50vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 0.5vw;\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:6vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: .9vw;\n  width: 3vw;\n  height: 1.5vw;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction:column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 70%;\n  height: 98%;\n  margin-top: 1vw;\n  display: flex;\n  flex-direction: unset;\n  align-content: flex-start;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n}\n\ncanvas{\n  width: 95%;\n  height: 95%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction:row;\n  margin-left: 1vw;\n  margin-bottom: 1vw;\njustify-content: space-evenly;\n}\n\n.coding{\n  width: 30vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 1.5vw;\n  margin-right: 3vw;\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:6vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: .9vw;\n  width: 3vw;\n  height: 1.5vw;\n}", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,cAAc;AAChB;;AAEA;EACE;aACW;AACb;;AAEA;EACE,aAAa;EACb,qBAAqB;AACvB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,eAAe;EACf,aAAa;EACb,qBAAqB;EACrB,yBAAyB;EACzB,eAAe;EACf,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;AACpB,6BAA6B;AAC7B;;AAEA;EACE,WAAW;EACX,WAAW;EACX,wBAAwB;EACxB,kBAAkB;EAClB,aAAa;EACb,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,UAAU;AACZ;;AAEA;EACE;AACF;;AAEA;EACE,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,aAAa;AACf","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1vw;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.container{\n  display: flex;\n  flex-direction:column;\n}\n\n.canvasDiv{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n}\n.interfaceDiv{\n  display: flex;\n  flex-direction: row;\n}\n\n.interfaceContainer{\n  width: 70%;\n  height: 98%;\n  margin-top: 1vw;\n  display: flex;\n  flex-direction: unset;\n  align-content: flex-start;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n}\n\ncanvas{\n  width: 95%;\n  height: 95%;\n  border: .3vw solid black;\n  border-radius: 2vw;\n  background-color: white;\n}\n\n.settingDiv{\n  width: 20vw;\n  height: 3vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  display: flex;\n  flex-direction:row;\n  margin-left: 1vw;\n  margin-bottom: 1vw;\njustify-content: space-evenly;\n}\n\n.coding{\n  width: 30vw;\n  height: 6vw;\n  border: .1vw solid black;\n  border-radius: 1vw;\n  margin: 1.5vw;\n  margin-right: 3vw;\n}\n\n.decodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n.encodeDiv{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n}\n\n.decodeInput{\n  height:2vw;\n  width: 5vw;\n}\n\ninput[type=\"range\"]{\n  width:6vw\n}\n\ninput[type=\"number\"]{\n  height:2.5vw;\n  width: 5vw;\n}\n\nbutton{\n  margin-top: .9vw;\n  width: 3vw;\n  height: 1.5vw;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -42419,7 +43006,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("f7369f3e99f7ce645896")
+/******/ 		__webpack_require__.h = () => ("6e9e528bc519c2bacd61")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
