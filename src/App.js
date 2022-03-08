@@ -1,5 +1,5 @@
 import drawAndSettings from './draw';
-import './darkmode'
+import Darkmode from './darkmode'
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <div className='container'>
         <div className='interfaceDiv'>
           <div className='darkmode'>
+            <Darkmode.DarkmodeClass></Darkmode.DarkmodeClass>
           </div>
           <div className='interfaceContainer'>
             <drawAndSettings.Settings setting="amount" maximum="500" defaultValueProp="20" idProp="0"></drawAndSettings.Settings>
@@ -32,4 +33,5 @@ export default App;
 
 window.addEventListener("load", () => {
   drawAndSettings.draw();
+  if (Darkmode.darkmode.isActivated()) document.getElementById("darkmodeCheckbox").checked = true;
 })

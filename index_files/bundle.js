@@ -33,7 +33,12 @@ function App() {
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
         className: "interfaceDiv",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
-          className: "darkmode"
+          className: "darkmode",
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_darkmode__WEBPACK_IMPORTED_MODULE_1__["default"].DarkmodeClass, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 11,
+            columnNumber: 13
+          }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 10,
@@ -47,7 +52,7 @@ function App() {
             idProp: "0"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 13
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "size",
@@ -56,7 +61,7 @@ function App() {
             idProp: "1"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 14,
+            lineNumber: 15,
             columnNumber: 13
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "distance",
@@ -65,7 +70,7 @@ function App() {
             idProp: "2"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 15,
+            lineNumber: 16,
             columnNumber: 13
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Settings, {
             setting: "step",
@@ -74,27 +79,27 @@ function App() {
             idProp: "3"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 13,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
           className: "coding",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Encoding, {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 13
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_draw__WEBPACK_IMPORTED_MODULE_0__["default"].Decoding, {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
@@ -107,12 +112,12 @@ function App() {
           id: "test"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 25,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 24,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
@@ -131,6 +136,7 @@ _c = App;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 window.addEventListener("load", () => {
   _draw__WEBPACK_IMPORTED_MODULE_0__["default"].draw();
+  if (_darkmode__WEBPACK_IMPORTED_MODULE_1__["default"].darkmode.isActivated()) document.getElementById("darkmodeCheckbox").checked = true;
 });
 
 var _c;
@@ -178,56 +184,76 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var darkmode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! darkmode-js */ "./node_modules/darkmode-js/lib/darkmode-js.js");
 /* harmony import */ var darkmode_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(darkmode_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
+var _jsxFileName = "/Users/paulherklotz/GitHub/Math-thingy-1/src/darkmode.js";
 
-const options = {
-  bottom: '89%',
-  // default: '32px'
-  right: 'unset',
-  // default: '32px'
-  left: '7.5%',
-  // default: 'unset'
-  time: '1s',
-  // default: '0.3s'
-  mixColor: '#fff',
-  // default: '#fff'
-  backgroundColor: '#fff',
-  // default: '#fff'
-  buttonColorDark: '#100f2c',
-  // default: '#100f2c'
-  buttonColorLight: '#fff',
-  // default: '#fff'
-  saveInCookies: false,
-  // default: true,
-  label: '🌓',
-  // default: ''
-  autoMatchOsTheme: true // default: true
 
-};
-const darkmode = new (darkmode_js__WEBPACK_IMPORTED_MODULE_0___default())(options);
-darkmode.showWidget(); // class DarkmodeClass extends Component {
-//     render() {
-//         function toogleDarkmode() {
-//             darkmode.toggle();
-//             console.log(darkmode.isActivated())
-//         }
-//         return (
-//             <div>
-//                 <div>
-//                     <p>Darkmode</p>
-//                 </div>
-//                 <div className='checkboxDiv'>
-//                     <input type="checkbox" id='darkmodeCheckbox' onChange={toogleDarkmode}></input>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
-// export default DarkmodeClass
+
+const darkmode = new (darkmode_js__WEBPACK_IMPORTED_MODULE_0___default())();
+
+class DarkmodeClass extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+  render() {
+    function toogleDarkmode() {
+      darkmode.toggle(); // if (darkmode.isActivated()) document.cookie = "darkmodeEnabled=true; expires= 06 Oct 2022 20:00:00 UTC; path=/ ";
+      // else document.cookie = "darkmodeEnabled=false"
+      // console.log(document.cookie);
+    } // function isDarkmodeEnabled() {
+    //     console.log("hi");
+    //     if (darkmode.isActivated()) document.getElementById("darkmodeCheckbox").checked = true;
+    // }
+
+
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
+          children: "Darkmode"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 17
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+        className: "checkboxDiv",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
+          type: "checkbox",
+          id: "darkmodeCheckbox",
+          onChange: toogleDarkmode
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }, this);
+  }
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  DarkmodeClass,
+  darkmode
+});
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
 const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
@@ -366,8 +392,6 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         rangeInput.setAttribute("min", "0.005");
         numberInput.setAttribute("min", "0.005");
       }
-
-      console.log("cahnged");
     }
 
     function newValue(event) {
@@ -395,7 +419,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         children: setting
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 103,
+        lineNumber: 102,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
         type: "range",
@@ -408,7 +432,7 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 104,
+        lineNumber: 103,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
         type: "number",
@@ -422,12 +446,12 @@ class Settings extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         step: settings.step
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 104,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 101,
       columnNumber: 13
     }, this);
   }
@@ -461,12 +485,12 @@ function Encoding() {
         children: "Base64-Encoded string:"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 133,
+        lineNumber: 132,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 131,
       columnNumber: 13
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("button", {
@@ -474,23 +498,23 @@ function Encoding() {
         children: " copy"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 135,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 134,
       columnNumber: 13
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
       id: "isCopied"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 137,
       columnNumber: 13
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 131,
+    lineNumber: 130,
     columnNumber: 9
   }, this);
 }
@@ -537,7 +561,7 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         children: "Paste to decode: "
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 173,
+        lineNumber: 172,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
         type: "text",
@@ -546,18 +570,18 @@ class Decoding extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         onChange: decodeFunc
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 173,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
         id: "errorMessage"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 175,
+        lineNumber: 174,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 172,
+      lineNumber: 171,
       columnNumber: 13
     }, this);
   }
@@ -42296,7 +42320,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".darkmode{ \n    height: 6vw;\n    width: 5vw;\n    margin: 1.5vw;\n    margin-left: 3vw;\n}\n/* input[type=\"checkbox\"]{\n    width: 2vw;\n    height: 2vw;\n    margin: 0;\n    margin-left: 25%;\n}\n.checkboxDiv{\n    align-content: center;\n} */", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,UAAU;IACV,aAAa;IACb,gBAAgB;AACpB;AACA;;;;;;;;GAQG","sourcesContent":[".darkmode{ \n    height: 6vw;\n    width: 5vw;\n    margin: 1.5vw;\n    margin-left: 3vw;\n}\n/* input[type=\"checkbox\"]{\n    width: 2vw;\n    height: 2vw;\n    margin: 0;\n    margin-left: 25%;\n}\n.checkboxDiv{\n    align-content: center;\n} */"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".darkmode{ \n    height: 6vw;\n    width: 15vw;\n    border: .1vw solid black;\n    border-radius: 1vw;\n    margin: 1.5vw;\n    margin-left: 3vw;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n}\ninput[type=\"checkbox\"]{\n    width: 2vw;\n    height: 2vw;\n    margin: 0;\n    margin-left: 25%;\n}\n.checkboxDiv{\n    align-content: center;\n}", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,WAAW;IACX,wBAAwB;IACxB,kBAAkB;IAClB,aAAa;IACb,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,uBAAuB;AAC3B;AACA;IACI,UAAU;IACV,WAAW;IACX,SAAS;IACT,gBAAgB;AACpB;AACA;IACI,qBAAqB;AACzB","sourcesContent":[".darkmode{ \n    height: 6vw;\n    width: 15vw;\n    border: .1vw solid black;\n    border-radius: 1vw;\n    margin: 1.5vw;\n    margin-left: 3vw;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n}\ninput[type=\"checkbox\"]{\n    width: 2vw;\n    height: 2vw;\n    margin: 0;\n    margin-left: 25%;\n}\n.checkboxDiv{\n    align-content: center;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -43006,7 +43030,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("6e9e528bc519c2bacd61")
+/******/ 		__webpack_require__.h = () => ("f612aa529e20f5e50a89")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

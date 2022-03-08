@@ -78,7 +78,6 @@ class Settings extends Component {
                 rangeInput.setAttribute("min", "0.005");
                 numberInput.setAttribute("min", "0.005");
             }
-            console.log("cahnged");
         }
 
         function newValue(event) {
