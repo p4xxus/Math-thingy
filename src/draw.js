@@ -26,10 +26,9 @@ function draw() {
     ctx.fillStyle = "white";
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = 'high';
-    settings.amount++
 
-    for (let index = settings.amount - 1; index > 0; index--) {
 
+    for (let index = settings.amount - 1 + 1; index > 0; index--) {
         ctx.beginPath();
         ctx.moveTo(0, 0);
         ctx.lineTo((Math.sqrt(index + 2)) * settings.size, 0);
@@ -37,12 +36,11 @@ function draw() {
         ctx.closePath();
         ctx.stroke();
         ctx.fill();
-        ctx.rotate(-Math.atan(1 / (Math.sqrt(index))) - settings.distance)//rotate canvas at       (also I love the settings.distance :D)
+        ctx.rotate(-Math.atan(1 / (Math.sqrt(index))) - settings.distance); //rotate canvas at       (also I love the settings.distance :D)
         // _____
         // |  /  <-- this angle
         // |/
     }
-    settings.amount--
 
     //adding gradient so last triangle wont be the most visible, remove it if you want to know what I mean.
     ctx.fillStyle = "black";
