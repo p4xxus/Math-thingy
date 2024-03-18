@@ -4,4 +4,4 @@ You basically have an right triangle, the hypotenuse is √2 then √3 and so on
 
 
 # Demo
-https://kaenigsion.github.io/Math-thingy/
+https://paulherk.github.io/Math-thingy/
